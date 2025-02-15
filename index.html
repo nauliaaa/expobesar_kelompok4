@@ -45,7 +45,27 @@
       color: #4f96ff;
       margin-left: -16px;
     }
-
+    .quote {
+      margin-top: -20px;
+      margin-right: 100px;
+      color: #717b8a;
+      font-size: 1.75rem;
+      letter-spacing: .02em;
+      line-height: 2.875rem;
+    }
+    .picture-tab-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+      line-height: 1.688rem;
+      color: #686868;
+    }
+    .picture-tab-desc {
+      font-size: 1rem;
+      letter-spacing: .005em;
+      line-height: 1.5rem;
+      color: #686868;
+    }
     @media only screen and (max-width: 600px) {
         .section-1 {
              margin-left: auto;
@@ -241,6 +261,7 @@
                 <small class="text-muted">Lorem ipsum dolor sit amet consectetur.</small>
                 <div class="my-4">
                   <div class="badge bg-success">badge</div>
+                  <del>Lorem, ipsum.</del>
                 </div>
                 <h4><div class="text-warning" style="display: inline;">warning</div> text</h4>
                 <div class="text-center my-4">
@@ -300,7 +321,8 @@
                 <h5>Title card 3</h5>
                 <small class="text-muted">Lorem ipsum dolor sit amet consectetur.</small>
                 <div class="my-4">
-                  <div class="badge bg-success">badge</div>
+                  <div class="badge bg-danger">badge</div>
+                  <del>Lorem, ipsum.</del>
                 </div>
                 <h4><div class="text-warning" style="display: inline;">warning</div> text</h4>
                 <div class="text-center my-4">
@@ -360,6 +382,7 @@
                 <small class="text-muted">Lorem ipsum dolor sit amet consectetur.</small>
                 <div class="my-4">
                   <div class="badge bg-success">badge</div>
+                  <del>Lorem, ipsum.</del>
                 </div>
                 <h4><div class="text-warning" style="display: inline;">warning</div> text</h4>
                 <div class="text-center my-4">
@@ -471,25 +494,55 @@
       <div class="col-sm-8">
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-              <div class="rosw">
+              <div class="row">
                 <div class="col-sm-8">
                     <i class="bi bi-quote icon-quote"></i>
-                    <div class="quote">
+                    <div class="quote mb-5">
                         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut eos modi, eaque mollitia facilis quaerat repudiandae."
                     </div>
+                    <button class="btn btn-lg btn-warning text-primary">Button Quote</button>
                 </div>
                 <div class="col-sm-4">
-
+                    <img src="images/nomad.jpg" alt="" class="img-fluid">
+                    <p class="picture-tab-title text-center mt-3 mb-1">Lorem, ipsum dolor</p>
+                    <p class="picture-tab-desc text-center">Lorem ipsum dolor sit amet</p>
                 </div>
               </div>
           </div>
           <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-              Konten Profile.</div>
+            <div class="row">
+              <div class="col-sm-8">
+                  <i class="bi bi-quote icon-quote"></i>
+                  <div class="quote mb-5">
+                      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatum quisquam ullam, itaque voluptates recusandae iure delectus impedit.
+                  </div>
+                  <button class="btn btn-lg btn-warning text-primary">Button Quote</button>
+              </div>
+              <div class="col-sm-4">
+                  <img src="images/nomad.jpg" alt="" class="img-fluid">
+                  <p class="picture-tab-title text-center mt-3 mb-1">Lorem ipsum dolor sit</p>
+                  <p class="picture-tab-desc text-center">Lorem ipsum dolor</p>
+              </div>
+            </div>
+            </div>
           <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-              Konten Contact
+            <div class="row">
+              <div class="col-sm-8">
+                  <i class="bi bi-quote icon-quote"></i>
+                  <div class="quote mb-5">
+                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, obcaecati eveniet. Tempora et officia impedit atque!
+                  </div>
+                  <button class="btn btn-lg btn-warning text-primary">Button Quote</button>
+              </div>
+              <div class="col-sm-4">
+                  <img src="images/nomad.jpg" alt="" class="img-fluid">
+                  <p class="picture-tab-title text-center mt-3 mb-1">Lorem ipsum</p>
+                  <p class="picture-tab-desc text-center">Lorem ipsum dolor sit</p>
+              </div>
+            </div>
           </div>
         </div>
-        <nav>
+        <nav class="mt-5">
           <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
             <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
                 <p class="link-tab-title">Lorem ipsum dolor</p>
