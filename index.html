@@ -66,6 +66,20 @@
       line-height: 1.5rem;
       color: #686868;
     }
+    .social-icon {
+      font-size: 30px;
+    }
+    .social-icon:hover{
+      color: #ffffff !important;
+    }
+    .menu-footer {
+      display: block;
+      text-decoration: none;
+      color: rgba(255,193,7,0.70)
+    }
+    .menu-footer:hover {
+      color:  rgba(255,193,7,1) !important;
+    }
     @media only screen and (max-width: 600px) {
         .section-1 {
              margin-left: auto;
@@ -647,9 +661,45 @@
     </section>
 </main>
 <footer class="container-fluid py-2 bg-black text-warning">
-    <div class="row justify-content-between">
-        <div class="col-sm-6">Copyright &copy;2023 Pesat</div>
-        <div class="col-sm-6 text-end">Powered By Studentday Web Design</div>
+    <div class="row justify-content-center my-5">
+      <div class="col-sm-10">
+        <div class="row">
+           <div class="col-sm-3 mb-5">
+            <div class="mb-4 text-center">
+              <img src="images/Logo-Pesat.png" alt="Logo Pesat" width="40px" class="d-inline-block">PESAT
+            </div>
+            <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestias commodi possimus aspernatur aliquam, ea recusandae qui ab non placeat.</p>
+            <p class="mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, sint? Voluptas deleniti illum libero aperiam?</p>
+            <p class="mb-1">Email: <a href="mailto:ahmadyani19@gmail.com">ahmadyani19gmail.com</a></p>
+            <p class="mb-3">Whatsaap: <a href="https://wa.me/+629517436475"target="_blank">089517436475</a></p>
+            <div class="d-flex flex-row mb-2">
+              <a href="https://www.facebook.com" class="text-warning social icon" target="_blank">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com" class="text-warning social icon mx-4" target="_blank">
+                <i class="bi bi-instagram"></i>
+              <a>
+                <a href="https://id.linkedin.com" class="text-warning social icon mx-4" target="_blank">
+                  <i class="bi bi-linkedin"></i>
+                <a>
+            </div>
+            <div class="d-flex flex-row">
+              <a href="https://www.twitter.com" class="text-warning social icon" target="_blank">
+                <i class="bi bi-twitter"></i>
+              <a>
+                <a href="https://www.tiktok.com" class="text-warning social icon mx-4" target="_blank">
+                  <i class="bi bi-tiktok"></i>
+                  </a>
+              </a>
+            </div>
+           </div>
+        </div>
+        <hr style="border-width: 5px;">
+        <div class="row flex-row-justify-content-between">
+          <div class="col-sm-6" id="footer-copyright">Copyright &copy;2023 pesat</div>
+          <div class="col-sm-6 text-end" id="footer-powered">powered by studentday web design</div>
+       </div>
+      </div>
     </div>
 </footer>
 <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
