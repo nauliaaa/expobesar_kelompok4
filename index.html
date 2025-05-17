@@ -210,6 +210,11 @@
         </div>
       </div>
     </section>
+    <section class="row section-bg-custom">
+      <video class="video--app" id="myVideo" autoplay="" muted="" preload="auto">
+        <source src="kisah masa lalu.mp4" type="video/mp4">
+      </video>
+    </section>
     <section class="row section-bg-custom py-5">
       <div class="col text-center">
         <h1 data-aos="fade-right">Organisasi Ahmad Yani</h1>
@@ -221,7 +226,7 @@
             </div>
           </div>
         <div class="row justify-content-center">
-          <div class="col-sm-3" data-aos="fade-up">
+          <div class="col-sm-3" data-aos="fade-right">
             <div class="card">
               <div class="card-body" style="text-align: left;">
                 <h5>PETA</h5>
@@ -281,7 +286,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3" data-aos="fade-down">
+          <div class="col-sm-3" data-aos="fade-right">
             <div class="card">
               <div class="card-body" style="text-align: left;">
                 <h5>TKR</h5>
@@ -340,7 +345,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3" data-aos="fade-up">
+          <div class="col-sm-3" data-aos="fade-right">
             <div class="card boarder-warning">
               <div class="card-header"> TNI </div>
               <div class="card-body" style="text-align: left;">
@@ -402,7 +407,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3" data-aos="fade-down">
+          <div class="col-sm-3" data-aos="fade-right">
             <div class="card">
               <div class="card-body" style="text-align: left;">
                 <h5>Banteng Raiders</h5>
@@ -830,6 +835,25 @@
 <script>
   const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
   const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+<script>
+  var videoEl = document.getElementById("myVideo");
+  var videoWasStarted = false;
+
+  window.addEventListener('scroll', funtion(e) {
+    if (isScrolledIntoView(videoEl) && !videoWasStarted) {
+      videoWasStarted = true;
+      videoEl.play();
+    }
+  });
+
+  function isScrolledIntoView(el) {
+    var elemTop = el.getBoundingClientRect().top;
+    var elemBottom = el.getBoundingClientRect().bottom;
+
+    var isVisible = (elemTop >= 0) && (elemBottom <= window.innterHeight);
+    return isVisible;
+  }
 </script>
 </body>
 </html>
